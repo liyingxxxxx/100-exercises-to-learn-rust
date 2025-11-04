@@ -9,6 +9,15 @@
 // `factorial(2)` to return `2`, and so on.
 //
 // Use only what you learned! No loops yet, so you'll have to use recursion!
+fn factorial(n:u32) -> u32 {
+    let mut x = 1;
+    let mut res:u32 = 1;
+    while x<=n {
+        res *=x;
+        x+=1;
+    }
+    res
+}
 
 #[cfg(test)]
 mod tests {
